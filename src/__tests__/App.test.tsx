@@ -8,7 +8,7 @@ test('demj', () => {
 });
 
 describe('render', () => {
-  it('renders the main page', () => {
+  it('renders the mmnbe', () => {
     render(
       <MemoryRouter>
         {' '}
