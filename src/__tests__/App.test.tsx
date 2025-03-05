@@ -9,6 +9,7 @@ test('demo', () => {
 describe('render', () => {
   it('renders the main page', () => {
     render(<App />);
+
     expect(true).toBeTruthy();
   });
 });
