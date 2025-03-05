@@ -3,6 +3,7 @@ import React from 'react';
 
 const Home = () => {
   const data: number = 'lkjhgfd';
+
   return (
     <HomeContainer>
       Welcome to the Home Page!
