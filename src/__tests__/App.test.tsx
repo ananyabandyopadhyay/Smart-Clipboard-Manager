@@ -12,7 +12,6 @@ describe('render', () => {
     render(
       <MemoryRouter>
         {' '}
-        {/* ✅ Wrap App inside MemoryRouter */}
         <App />
       </MemoryRouter>
     );
