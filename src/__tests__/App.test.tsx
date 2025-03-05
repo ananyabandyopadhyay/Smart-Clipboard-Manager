@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom'; // ✅ Import MemoryRouter
 import App from '../App';
 
-test('demo', () => {
+test('demj', () => {
   expect(true).toBe(true);
 });
 
