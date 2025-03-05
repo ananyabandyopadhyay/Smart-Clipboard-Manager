@@ -1,2 +1,6 @@
 import '@testing-library/jest-dom/vitest';
-import '@testing-library/jest-dom';
+// Mock global objects if needed
+import { expect } from 'vitest';
+
+// Set up any necessary global configuration for your tests
+globalThis.expect = expect;

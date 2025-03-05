@@ -22,9 +22,6 @@
     "src/**/*.{ts,tsx}": [
       "prettier --write",
       "eslint --fix"
-    ],
-    "src/**/*.{json,css,scss,md}": [
-      "prettier --write"
     ]
   },
   "husky": {
