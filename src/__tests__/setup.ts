@@ -3,4 +3,4 @@ import '@testing-library/jest-dom/vitest';
 import { expect } from 'vitest';
 
 // Set up any necessary global configuration for your tests
-globalThis.expect = expect;
+(globalThis as any).expect = expect;

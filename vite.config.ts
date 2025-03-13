@@ -1,20 +1,25 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'public/manifest.json',
+          dest: '.',
+        },
+      ],
+    }),
+  ],
   build: {
+    outDir: 'build',
     rollupOptions: {
-      input: '/E:/personal-project/vite/main.tsx',
-      output: {
-        entryFileNames: 'app.tsx',
+      input: {
+        main: './index.html',
       },
     },
-  },
-  test: {
-    environment: 'jsdom',
-    setupFiles: './src/__tests__/setup.ts',
-    include: ['**/*.test.tsx'],
   },
 });

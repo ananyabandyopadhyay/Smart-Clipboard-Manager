@@ -1,7 +1,6 @@
 // pages/Posts.tsx
 import { useQuery } from '@tanstack/react-query';
 import { PostsContainer } from './styles';
-import React from 'react';
 
 const fetchPosts = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts');
